@@ -34,13 +34,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive design uses media queries but it’s still hard coded at each breakpoint, while a full responsive one has both the benefits of a fluid design and an adaptive one. A full responsive design it’s better but it’s longer and more difficult to implement and therefore more expansive to build and maintain.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+When you build a website “mobile first” you start to build it for a mobile first, and then with use of “min-width” you “go up” through your devices design until you reach the last one that is commonly a desktop screen. In “desktop first” you build it the other way around, and because of this you use “max-width” instead.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It sets the global rule for font-size at 10px. It’s then really easy to use rem, because you have everything in base 10 ( e.g. 1.6rem = 16px). The big advantage to use a percentage instead of hard coding the value is that it doesn’t “break” accessibility. A user for example still can use the font-sizing option in his browser.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessors are programs that permit us to use more advanced functionalities for a language and then -through a compiler- output a file in the base language. 
+Let’s think about LESS. It permits us to write CSS code using a wide variety of “tricks” (variables, mixins, nesting capabilities etc..) , but then “feed” our HTML file with our usual CSS file. 
+Code written with preprocessors is more easy to organize, faster to write, easier to read and easier to maintain.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I find particularly useful mixin functionality. It let us to use specific “classes” to write DRYer code that is faster to write and easier to read and to maintain.  
+Even if I see the potential of nesting mobile queries for large project and a lot of supported devices, I still find that sometimes writing media queries in basic CSS “chunks” feels somehow less complicated.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
