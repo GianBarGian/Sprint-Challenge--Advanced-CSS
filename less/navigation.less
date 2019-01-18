@@ -9,12 +9,15 @@ nav {
         .anchor-nav();
     }
     h1 {
-        font-size: 4rem;
+        font-size: 3.9rem;
     }
     .navigation {
         .flex(row, space-evenly, center);
         width: 45%;
         font-size: 1.6rem;
         padding-top: 20px;
+        @media @phone {
+            width: 87%;
+        }
     }
 }
