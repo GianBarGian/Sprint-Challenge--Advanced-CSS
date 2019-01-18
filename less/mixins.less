@@ -1,1 +1,22 @@
-// Mixins Here
+.flex(@direction: row; @justify: flex-start; @align: stretch) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.anchor-nav() {
+    text-decoration: none;
+    color: @nav-font;
+}
+
+.button(@font-size: 1.9rem;@padding: 9px 0 0 5.5%;@width: 30%;@height: 35px;@border-radius: 4px;@background: @btn-bg-color;@color: @wild-sand) {
+    display: inline-block;
+    font-size: @font-size;
+    background: @background;
+    border-radius: @border-radius;
+    color: @color;
+    padding: @padding;
+    width: @width;
+    height: @height ;
+}

@@ -1,1 +1,28 @@
-// Navigation code here
+
+nav {
+    .flex(column, center, center);
+    padding-top: 13px;
+    padding-bottom: 11px;
+    background: @nav-bg;
+    border-bottom: @nav-border;
+    //fixed position nav
+    overflow: hidden;
+    position: fixed;
+    width: 100%; 
+    top: 0;
+    a{
+        .anchor-nav();
+    }
+    h1 {
+        font-size: 3.9rem;
+    }
+    .navigation {
+        .flex(row, space-evenly, center);
+        width: 45%;
+        font-size: 1.6rem;
+        padding-top: 20px;
+        @media @phone {
+            width: 87%;
+        }
+    }
+}
